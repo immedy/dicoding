@@ -13,7 +13,7 @@ public class ApiClient {
                 .addInterceptor(loggingInterceptor)
                 .build();
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://192.168.8.227/attendance-apis-lumen/public/")
+                .baseUrl("https://api.dayakuraja.id/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build();
