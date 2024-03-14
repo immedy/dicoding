@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
                         if (response.isSuccessful()){
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                             PrefManager prf = new PrefManager(LoginActivity.this);
-                            prf.setString(Constans.TOKEN, response.body().getData().getToken());
+                            prf.setString(Constans.TOKEN, response.body().getUser().getToken());
                             startActivity(intent);
                         }
                     }

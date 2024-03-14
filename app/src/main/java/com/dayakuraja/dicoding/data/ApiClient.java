@@ -13,7 +13,7 @@ public class ApiClient {
                 .addInterceptor(loggingInterceptor)
                 .build();
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://api.dayakuraja.id/")
+                .baseUrl("http://192.168.10.167:8083/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build();

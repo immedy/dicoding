@@ -2,10 +2,13 @@ package com.dayakuraja.dicoding.data.modellogin;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Data{
+public class User{
 
 	@SerializedName("pegawai_id")
 	private String pegawaiId;
+
+	@SerializedName("nama_lengkap")
+	private String namaLengkap;
 
 	@SerializedName("id")
 	private int id;
@@ -22,6 +25,14 @@ public class Data{
 
 	public String getPegawaiId(){
 		return pegawaiId;
+	}
+
+	public void setNamaLengkap(String namaLengkap){
+		this.namaLengkap = namaLengkap;
+	}
+
+	public String getNamaLengkap(){
+		return namaLengkap;
 	}
 
 	public void setId(int id){

@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
         data.enqueue(new Callback<ResponseLogin>() {
             @Override
             public void onResponse(Call<ResponseLogin> call, Response<ResponseLogin> response) {
-                ResponseLogin responseBody = response.body();
-               binding.textUsername.setText(response.body().getData().getUsername());
+                binding.textUsername.setText(response.body().getUser().getNamaLengkap());
             }
 
             @Override

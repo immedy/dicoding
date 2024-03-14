@@ -14,7 +14,7 @@ public interface ApiClientInterface {
     @POST("api/login")
     Call<ResponseLogin> getLogin (@Body ModelLogin modelLogin);
 
-    @GET ("api/user")
+    @GET ("api/checkAutentikasi")
     Call<ResponseLogin> getUser(@Header("Authorization") String token);
 
 

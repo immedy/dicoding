@@ -4,36 +4,37 @@ import com.google.gson.annotations.SerializedName;
 
 public class ResponseLogin{
 
-	@SerializedName("data")
-	private Data data;
+	@SerializedName("pesan")
+	private String pesan;
 
 	@SerializedName("success")
-	private boolean success;
+	private String success;
 
-	@SerializedName("message")
-	private String message;
-
-	public void setData(Data data){
-		this.data = data;
+	@SerializedName("user")
+	private User user;
+	public User getUser(){
+		return user;
 	}
 
-	public Data getData(){
-		return data;
+	public void setPesan(String pesan){
+		this.pesan = pesan;
 	}
 
-	public void setSuccess(boolean success){
+	public String getPesan(){
+		return pesan;
+	}
+
+	public void setSuccess(String success){
 		this.success = success;
 	}
 
-	public boolean isSuccess(){
+	public String getSuccess(){
 		return success;
 	}
 
-	public void setMessage(String message){
-		this.message = message;
+	public void setUser(User user){
+		this.user = user;
 	}
 
-	public String getMessage(){
-		return message;
-	}
+
 }
